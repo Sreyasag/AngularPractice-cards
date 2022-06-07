@@ -1,1 +1,31 @@
-<app-card></app-card>
+<app-card
+    *ngFor="let post of posts"
+    [title]="post.title"
+    [username]="post.username"
+    [content]="post.content"
+    [imageUrl]="post.imageUrl"
+></app-card>
+
+
+<!--
+    
+   creating cards manually 
+    
+<app-card
+    [title]="posts[0].title"
+    [username]="posts[0].username"
+    [content]="posts[0].content"
+    [imageUrl]="posts[0].imageUrl"
+></app-card>
+<app-card
+    [title]="posts[1].title"
+    [username]="posts[1].username"
+    [content]="posts[1].content"
+    [imageUrl]="posts[1].imageUrl"
+></app-card>
+<app-card
+    [title]="posts[2].title"
+    [username]="posts[2].username"
+    [content]="posts[2].content"
+    [imageUrl]="posts[2].imageUrl"
+></app-card> -->
